@@ -1,3 +1,8 @@
+// IF para 
+if(process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+
 // comandos de inicialização e instalação de todas as dependencias
 // npm init -y
 // npm i express
