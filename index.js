@@ -30,7 +30,7 @@ const port = 3000;
 const musica = require('./routers/musicas.routes');
 app.use('/musicas', musica);
 
-app.listen(port, ()=> {
+app.listen(process.env.PORT || port, ()=> {
     console.info(`Servidor rodando na porta: ${port}`);
 })
 
